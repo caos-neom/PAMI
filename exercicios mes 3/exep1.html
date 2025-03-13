@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="dizerOla()">Digá ola</button>
+<button onclick="aplicarEstilo()">aplicar estilo</button>
+<button onclick="aumentarFonte()">aumentar fonte</button>
+<button onclick="diminuirFonte()">diminuir fonte</button>
+<button onclick="corAzul()">aplicar cor azul </button>
+<button onclick="corVermelho()">aplicar cor vermelho</button>
+<button onclick="corAmarelo()">aplicar cor amarelo</button>
+<button onclick="aumentarMarge()"> aumentar margens</button>   
+<button onclick="diminuirMarge()"> diminuir margens</button>
+<h1>derrame cerebral</h1>
+    
+    <script>
+
+console.log(document.body.style.backgroundColor = "purple")
+
+function dizerOla(){
+    alert (Ola);
+}
+
+let font_size = 12;
+let titulo = document.querySelector('h1')
+let margem = 3
+function aplicarSize(){
+    titulo.style.fontSize = font_size + 'px'  
+}
+
+
+function aumentarFonte(){
+font_size++
+aplicarSize();
+}
+
+function diminuirFonte(){
+font_size--;
+aplicarSize();
+}
+
+function aplicarEstilo(){
+    let titulo = document.querySelector('h1');
+console.log(titulo)
+titulo.style.backgroundColor = "white";
+titulo.style.fontSize = "64px"
+titulo.style.fontFamily = "Comic Sans ms"
+titulo.style.marginTop = "100px"
+}
+
+
+function corAzul(){
+    titulo.style.color = "blue"
+}
+
+function corAmarelo(){
+    titulo.style.color = "yellow"
+}
+
+function corVermelho(){
+    titulo.style.color = "red"
+}
+
+function aumentarMarge(){
+margem++
+    marge()
+}
+
+function diminuirMarge(){
+margem--
+    marge()
+}
+
+function marge(){
+    titulo.style.margin = margem + "px"
+}
+
+    </script>
+
+</body>
+</html>
