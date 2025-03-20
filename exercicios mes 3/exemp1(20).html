@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1> Suicideo < Genocideo</h1> -->
+
+<div id="estacionamento">
+
+
+
+</div>
+
+<!-- dom javascript -->
+<button onclick="addVeiculo1()">adicionar jetskis</button>
+<button onclick="addVeiculo2()">adicionar barcos</button>
+<button onclick="addVeiculo3()">adicionar banhistas</button>
+<button onclick="addVeiculo4()">adicionar submarinos</button>
+    <script>
+
+function addVeiculo1(){
+    let veiculo_1 = document.createElement('h1')
+veiculo_1.innerText = 'fusca AZUL'
+veiculo_1.style.color = "blue"
+veiculo_1.style.backgroundColor = "black"
+veiculo_1.style.fontSize = '30px'
+veiculo_1.style.fontFamily = "ComicSans"
+document.querySelector('#estacionamento').appendChild(veiculo_1)
+
+let foto = document.createElement('img')
+foto.setAttribute('src','https://i.ytimg.com/vi/IJbg9rh6Zq8/sddefault.jpg')
+document.querySelector('#estacionamento').appendChild(foto)
+}
+
+function addVeiculo2(){
+    let veiculo_2 = document.createElement('h1')
+veiculo_2.innerText = 'avião'
+veiculo_2.style.color = "black"
+veiculo_2.style.backgroundColor = "blue"
+veiculo_2.style.fontSize = '30px'
+veiculo_2.style.fontFamily = "ComicSans"
+document.querySelector('#estacionamento').appendChild(veiculo_2)
+
+let foto = document.createElement('img')
+foto.setAttribute('src','https://static.mundoeducacao.uol.com.br/mundoeducacao/2023/04/world-trade-center-por-volta-de-1980-antes-da-destruicao-das-torres-gemeas-no-atentado-dia-11-de-setembro-de-2001.jpg')
+document.querySelector('#estacionamento').appendChild(foto)
+
+}
+function addVeiculo3(){
+    let veiculo_3 = document.createElement('h1')
+veiculo_3.innerText = 'topeiras motoqueiras'
+veiculo_3.style.color = "brow"
+veiculo_3.style.backgroundColor = "red"
+veiculo_3.style.fontSize = '30px'
+veiculo_3.style.fontFamily = "ComicSans"
+document.querySelector('#estacionamento').appendChild(veiculo_3)
+
+let foto = document.createElement('img')
+foto.setAttribute('src','https://thumbs.dreamstime.com/b/toupeira-e-rato-na-ilustra%C3%A7%C3%A3o-d-da-motocicleta-o-toupeiro-oskar-julius-v%C3%A3o-para-cidade-hoje-fazer-algumas-compras-tamb%C3%A9m-191413897.jpg')
+document.querySelector('#estacionamento').appendChild(foto)
+}
+function addVeiculo4(){
+    let veiculo_4 = document.createElement('h1')
+veiculo_4.innerText = 'titan--'
+veiculo_4.style.color = "white"
+veiculo_4.style.backgroundColor = "cyan"
+veiculo_4.style.fontSize = '30px'
+veiculo_4.style.fontFamily = "ComicSans"
+document.querySelector('#estacionamento').appendChild(veiculo_4)
+
+let foto = document.createElement('img')
+foto.setAttribute('src','https://upload.wikimedia.org/wikipedia/commons/3/3d/Iceberg_in_the_Arctic_with_its_underside_exposed.jpg')
+document.querySelector('#estacionamento').appendChild(foto)
+
+}
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
