@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Dparque dos horroes</title>
+</head>
+<body>
+<img src="interruptor desligado.png" id="interruptor" onclick="acionarInterruptor()">
+<img src="lampada desligada.png" id ="lampada" onclick="acionarInterruptor()">
+<script>
+            let acionado = true
+    function acionarInterruptor(){
+let body = document.querySelector('body')
+        if (acionado == true){
+        let interruptor = document.querySelector('#interruptor')
+   body.style.backgroundColor = 'black'
+      interruptor.setAttribute('src','./interruptor desligado.png')
+      lampada.setAttribute('src','./lampada desligada.png')
+    }
+    else{
+        let interruptor = document.querySelector('#interruptor')
+        body.style.backgroundColor = 'white'
+        interruptor.setAttribute('src','./interruptor ligado.png')
+lampada.setAttribute('src','./lampada ligada.png')
+    }acionado = !acionado   
+    
+    
+    
+    }
+</script>
+</body>
+</html>
