@@ -67,14 +67,60 @@ console.log(string.length)
         // console.log(string.length)
         
         </script> -->
-    
+<!--     
         <script>
-while(fim = 'sim'){
-            let string = prompt('insira se nome completo (um de cada vez)')
-             let fim = prompt('esse e seu ultimo nome?')
-        }
-           
-        console.log(string.charAt(0))
-            // console.log(string.length)
+            let nomes = prompt('Insira sua quantidade de nomes')
+        
+            for (let index = 1; index <= nomes; index++) {
+                let string = prompt("Insira seu nome completo:");
+                let inicial = nome.charAt(0)
+        
+                console.log(inicial)
+            }
             
-            </script>
+            
+        </script> -->
+
+
+        <!-- <script>
+            let letra = prompt('')
+            let string = prompt('')
+
+            let conta = 0
+    
+           
+    
+            for (let index = 0; index<string.length; index++) {
+                
+              if(string.charAt(index) == letra) {
+                conta++
+              }
+            }
+            console.log(`A letra ${letra} aparece ${conta} vezes na palavra "${string}"`)
+    
+            
+            
+    
+        </script> -->
+
+        <script>
+
+            let palavra = "guilherme";
+            let chance = 3;
+    
+            for (let tentativas = 0; tentativas < chance;) {
+               
+                let letra = prompt("Advinhe uma letra")
+                let caracter = palavra.indexOf(letra)
+            
+            if(caracter == -1){
+                console.log("essa letra não está na palavra")
+            }
+            else{
+                console.log("ACERTOU!! A palavra era Guilherme!");
+                
+            }
+    }
+            
+    
+        </script>
