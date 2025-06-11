@@ -166,39 +166,51 @@ let string = '377.888.288-00'
 
             <script>
 
+// necessitei de dois if iguais para fazer ele parar caso aperte mais de um start
 
-                let milisegundos = 0;
-                let segundos = 0;
-                let minutos = 0;
-                let horas = 0;
-                let valor = 0;
-            
+
+                let milisegundos = 0
+                let segundos = 0
+                let minutos = 0
+                let horas = 0
+                let valor = 0
+                let tempo = 0
+
                 function cronometro() {
-                valor = setInterval(() => {
-                    milisegundos++;
-            
+
+                    tempo = 1 
+                    
+                    // if(tempo == 1 ){ 
+                
+                    valor = setInterval(() => {
+                       if(tempo == 1 ){    
+                    milisegundos++
+                       }
                     if (milisegundos > 99) {
-                            segundos++;
+                            segundos++
                             milisegundos = 0;
                     }
                     if (segundos > 59) {
-                            minutos++;
-                            segundos = 0;
+                            minutos++
+                            segundos = 0
                     }
                     if (minutos > 59) {
                             horas++
-                            minutos = 0;
+                            minutos = 0
                     }
                        
-                    
-                    console.log(`${horas} : ${minutos} : ${segundos} : ${milisegundos}`);
-                    }, 10);
-                }
+                  if(tempo == 1 ){ 
+                    console.log(`${horas} : ${minutos} : ${segundos} : ${milisegundos}`)
+                   }
+                    }, 10)}
+                //}
+                
             
-            
+                
                 function stop() {
-                    clearInterval(valor);
+                    clearInterval(valor)
                     valor = 0
+                    tempo = 0
                 }
             
             
