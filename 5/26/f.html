@@ -103,12 +103,12 @@ console.log(string.length)
     
         </script> -->
 
-        <script>
+        <!-- <script>
 
-            let palavra = "guilherme";
+            let palavra = "derrame";
             let chance = 3;
     
-            for (let tentativas = 0; tentativas < chance;) {
+            for (let tentativas = 0; tentativas < chance;tentativas++) {
                
                 let letra = prompt("Advinhe uma letra")
                 let caracter = palavra.indexOf(letra)
@@ -117,10 +117,89 @@ console.log(string.length)
                 console.log("essa letra não está na palavra")
             }
             else{
-                console.log("ACERTOU!! A palavra era Guilherme!");
+                console.log("ACERTOU!! A palavra era derrame");
                 
             }
     }
             
     
-        </script>
+        </script> -->
+
+        <!-- <script>
+            let string = '(24) 19 99475-0854'
+            pegarNum()
+        
+        function pegarNum() {
+            console.log('DDI: ' + string.substr(1,2))
+            console.log('DDD: ' + string.substr(5,2))
+            console.log('Numero: ' + string.substr(9,10))
+        }
+        
+
+        </script> -->
+
+        <!-- <script>
+
+let string = '377.888.288-00'
+            let num = string.substr(0,3) + string.substr(4,3) + string.substr(8,3) + string.substr(12,2)
+        
+            console.log(num)
+        </script> -->
+
+        <!-- <script>
+     
+            let string = prompt(1)
+        
+            if (string[0] == ' ' || string[string.length-1] == ' '){
+                console.log("Texto invalido")
+            }
+            else{
+                console.log("Texto valido.")
+            }
+        
+            
+        
+            </script> -->
+
+            <button onclick="cronometro()">Start</button>
+            <button onclick="stop()">Stop</button>
+
+            <script>
+
+
+                let milisegundos = 0;
+                let segundos = 0;
+                let minutos = 0;
+                let horas = 0;
+                let valor = 0;
+            
+                function cronometro() {
+                valor = setInterval(() => {
+                    milisegundos++;
+            
+                    if (milisegundos > 99) {
+                            segundos++;
+                            milisegundos = 0;
+                    }
+                    if (segundos > 59) {
+                            minutos++;
+                            segundos = 0;
+                    }
+                    if (minutos > 59) {
+                            horas++
+                            minutos = 0;
+                    }
+                       
+                    
+                    console.log(`${horas} : ${minutos} : ${segundos} : ${milisegundos}`);
+                    }, 10);
+                }
+            
+            
+                function stop() {
+                    clearInterval(valor);
+                    valor = 0
+                }
+            
+            
+            </script>
