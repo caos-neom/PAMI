@@ -1,0 +1,29 @@
+<script>
+
+let map = new Map()
+map.set('nome','bafosneide')
+map.set('idade',12)
+map.set('telefone','123')
+map.set('cpf','456')
+
+//verificar se existe
+console.log(map.has('nome'))
+
+//excluir uma chave
+map.delete('cpf')
+console.log(map)
+
+//verifica a quantidade de chaves
+console.log(map.size)
+
+//faz a interaçao das chaves do Map Object
+for(key of map.keys()){
+     console.log(key)
+}
+
+//faz a interaçao das valores do Map Object
+for(value of map.values()){
+     console.log(value)
+}
+
+</script>
