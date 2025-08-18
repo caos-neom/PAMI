@@ -1,0 +1,26 @@
+<script>
+
+const num1 = [1,2,3]
+const num2 = [4,5,6]
+
+//combinando valores usando spread
+const todosNum = [...num1,...num2]
+
+console.log(todosNum)
+//saída : [1,2,3,4,5,6]
+
+const copiarNum = [...num1]
+console.log(copiarNum)
+
+let copiaVinculada = num1
+console.log(copiaVinculada)
+
+const numeros = [10,20,30]
+
+function soma(a,b,c){
+    return a + b + c
+}
+
+console.log(soma(...numeros))
+
+</script>
